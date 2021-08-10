@@ -3,12 +3,14 @@ var i = 0;
 const txt = document.querySelector(".txt");
 const cbox = document.getElementById("checkbox");
 document.onkeydown = function(a) {
-	console.log(a.code);
 	if (a.code == "ControlLeft" || a.code == "ControlRight" || a.code == "ShiftLeft" || a.code == "ShiftRight") {
 		return;
 	} else {
 		next();
 	}
+}
+document.ontouchstart = function() {
+        next();
 }
 
 function next() {
