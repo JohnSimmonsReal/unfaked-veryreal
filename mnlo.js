@@ -9,9 +9,6 @@ document.onkeydown = function(a) {
 		next();
 	}
 }
-document.ontouchstart = function() {
-        next();
-}
 
 function next() {
 	if (enabled == 1) {
